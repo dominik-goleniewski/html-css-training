@@ -1,9 +1,33 @@
 body {
     background: rgb(236, 187, 118);
-    background: linear-gradient(180deg, rgba(236, 187, 118, 1) 9%, rgba(247, 227, 199, 1) 30%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(180deg, rgba(236, 187, 118, 1) 7%, rgba(247, 227, 199, 1) 23%, rgba(255, 255, 255, 1) 57%);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    color: rgb(78, 38, 38);
+    color: rgb(92, 38, 38);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    text-align: left;
+}
+
+.main-view {
+    text-align: center;
+    margin-top: 6%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 {
+    flex-direction: column;
 }
