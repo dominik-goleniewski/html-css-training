@@ -4,14 +4,14 @@ body {
     background-repeat: no-repeat;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    color: rgb(92, 38, 38);
+    color: rgb(0, 0, 0);
     margin: 1rem;
     display: flex;
     flex-direction: column;
 }
 
 .nav-list {
-    justify-self: flex-end;
+    text-align: end;
 }
 
 li {
@@ -21,11 +21,10 @@ li {
 a {
     color: white;
     text-decoration: none;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
-a:hover,
-a:active {
+a:hover {
     text-decoration: underline;
 }
 
@@ -44,7 +43,6 @@ a:active {
 
 .main-view {
     text-align: center;
-    margin-top: 2%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
@@ -79,15 +77,28 @@ a:active {
 }
 
 .my-input {
-    width: 15rem;
+    width: 14rem;
     height: 2.5rem;
     border: none;
     background: transparent;
-    border-radius: 5%;
+    border-radius: 12px;
     opacity: 20%;
     -webkit-box-shadow: 0px 5px 6px 1px rgba(170, 170, 173, 1);
     -moz-box-shadow: 0px 5px 6px 1px rgba(170, 170, 173, 1);
     box-shadow: 0px 5px 6px 1px rgba(170, 170, 173, 1);
+}
+
+.my-button {
+    height: 2.5rem;
+    width: 7rem;
+    background-color: rgba(250, 173, 110, 0.712);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.my-button:hover {
+    opacity: 70%;
 }
 
 .bottom-view {
@@ -99,9 +110,78 @@ a:active {
 
 .footer {
     height: 3rem;
+    padding: 0 6rem 0 6rem;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li>i {
+    padding-left: 1rem;
+    cursor: pointer;
 }
 
 .footer-text {
-    opacity: 50%;
+    opacity: 40%;
     color: black;
+}
+
+.bottom-container {
+    padding: 2% 8% 4% 8%;
+    flex-direction: column;
+}
+
+.bottom-photos {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 5%;
+    padding-top: 3%;
+}
+
+.photo {
+    border-radius: 5%;
+}
+
+.photo:hover {
+    opacity: 80%;
+    -webkit-filter: brightness(30%);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.photo:hover + .photo1-text {
+    display: block;
+}
+
+.photo:hover + .photo2-text {
+    display: block;
+}
+
+.photo:hover + .photo3-text {
+    display: block;
+}
+
+.photo-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.photo1-text, .photo2-text, .photo3-text {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

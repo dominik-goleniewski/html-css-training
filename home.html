@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/40d2b3cf0f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,11 +17,11 @@
         <div>
             <img src="./img/png/logo.png" alt="logo" width="120rem" height="70rem">
         </div>
-        <div class="nav-list">
+        <div class="nav-list column right">
             <ul>
-                <li class="active">
-                    <a href="">Home</a>
-                </li> 
+                <li>
+                    <a class="active" href="">Home</a>
+                </li>
                 <li>
                     <a href=""> Recipes</a>
                 </li>
@@ -28,7 +29,7 @@
                     <a href="">About</a>
                 </li>
                 <li>
-                    <a href="">Content</a>
+                    <a href="">Contact</a>
                 </li>
             </ul>
         </div>
@@ -43,6 +44,7 @@
                 <span style="font-size:medium;">Explore 250+ recipes</span>
                 <br><br>
                 <input class="my-input" placeholder="Enter your e-mail">
+                <button class="my-button"><span style="color:white; font-size:medium">Subscribe</span></button>
             </p>
         </div>
         <div class="item item-2">
@@ -87,10 +89,48 @@
 
     </div>
     <div class="bottom-view">
-        asd
+        <div class="bottom-container">
+            <span style="font-size:xx-large; color: white;"><i class="fa-solid fa-lg fa-arrow-trend-up"></i> Trending
+                Recipes</span>
+            <div class="bottom-photos">
+                <div class="photo-container">
+                    <img class="photo" src="./img/photo/pancakes.jpg" alt="logo" width="250rem" height="320rem">
+                    <div class="photo1-text"><h2>Pancakes</h2><i class="fa-solid fa-clock-rotate-left"></i> 35 min</div>
+                </div>
+                <div class="photo-container">
+                    <img class="photo" src="./img/photo/musli.jpg" alt="logo" width="250rem" height="320rem">
+                    <div class="photo2-text"><h2>Musli</h2><i class="fa-solid fa-clock-rotate-left"></i> 25 min</div>
+                </div>
+                <div class="photo-container">
+                    <img class="photo" src="./img/photo/pumpkin_pie.jpg" alt="logo" width="250rem" height="320rem">
+                    <div class="photo3-text"><h2>Pumpkin<br>Pie</h2><i class="fa-solid fa-clock-rotate-left"></i> 75 min</div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer">
-        <p class="footer-text">© 2022 EasyMeals, All rights reserved</p>
+        <div class="row">
+            <div class="column">
+                <p class="footer-text"><span>&#169</span> 2022 EasyMeals, All rights reserved</p>
+            </div>
+            <div class="column right">
+                <ul>
+                    <li>
+                        <i class="fa-brands fa-2x fa-instagram"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-2x fa-facebook-square"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-2x fa-twitter"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-2x fa-pinterest-square"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 </body>
 
