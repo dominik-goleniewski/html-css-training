@@ -10,10 +10,6 @@ body {
     flex-direction: column;
 }
 
-.nav-list {
-    text-align: end;
-}
-
 li {
     display: inline;
 }
