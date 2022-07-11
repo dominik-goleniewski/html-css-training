@@ -166,8 +166,10 @@ li>i {
 .tg {
     margin-top: 10%;
     border-collapse: collapse;
-    border-radius: 1em;
+    border-radius: 10px;
+    border-style: hidden;
     overflow: hidden;
+    box-shadow: 0 0 0 1px rgb(0, 0, 0);
 }
 
 .tg td {
